@@ -9,8 +9,8 @@
         </Console>
         <RollingFile
                 name="rollingFile"
-                fileName="./flightApplication.log"
-                filePattern="./flightApplication.%d{dd-MMM}.log.gz"
+                fileName="./fitFlightApplication.log"
+                filePattern="./fitFlightApplication.%d{dd-MMM}.log.gz"
                 ignoreExceptions="false">
             <PatternLayout>
                 <Pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %highlight{%-5level} [%20.20t] %highlight{%-40.40logger}:%L - %m%n</Pattern>

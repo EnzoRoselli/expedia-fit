@@ -1,24 +1,16 @@
 package com.expedia.fitflights.controllers;
 
-import com.expedia.fitflights.models.dtos.responses.FlightDTO;
 import com.expedia.fitflights.models.dtos.responses.FlightListDTO;
 import com.expedia.fitflights.models.entities.Flight;
 import com.expedia.fitflights.models.enums.TimeOfDay;
-//import com.expedia.fitflights.services.interfaces.FlightService;
 import com.expedia.fitflights.services.FlightService;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
-
 import org.mockito.Mock;
-import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
-import org.springframework.web.method.annotation.MethodArgumentTypeMismatchException;
 
-import javax.validation.ConstraintViolationException;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
@@ -28,7 +20,6 @@ import java.util.Arrays;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.mockito.Mockito.when;
 import static org.mockito.MockitoAnnotations.openMocks;
 
 public class FlightControllerTest {

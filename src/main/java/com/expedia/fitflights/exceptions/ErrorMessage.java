@@ -3,13 +3,13 @@ package com.expedia.fitflights.exceptions;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 
-import java.util.Date;
+import java.time.LocalDateTime;
 
 @Getter
 @AllArgsConstructor
 public class ErrorMessage {
     private int statusCode;
-    private Date timestamp;
+    private LocalDateTime timestamp;
     private String description;
     private String url;
 }
