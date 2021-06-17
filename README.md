@@ -36,7 +36,6 @@ The excercise was to develop an application that give us available flights for a
 - Mockito
 - MapStruct
 - Swagger
-- H2 for integration tests
 
 ## How to Use :pencil:
 
