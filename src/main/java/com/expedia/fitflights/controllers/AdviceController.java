@@ -18,7 +18,7 @@ public class AdviceController {
 
     @ExceptionHandler({MethodArgumentTypeMismatchException.class, ConstraintViolationException.class})
     @ResponseStatus(HttpStatus.BAD_REQUEST)
-    public ErrorMessage constraintViolationException(Exception ex, WebRequest request){
+    public ErrorMessage badRequest(Exception ex, WebRequest request){
         log.error(ex.getMessage());
         return new ErrorMessage(HttpStatus.BAD_REQUEST.value(), LocalDateTime.now(), ex.getMessage(), request.getDescription(false));
     }

@@ -43,7 +43,7 @@ The excercise was to develop an application that give us available flights for a
 - In **application.yml** you have the Environment Variables **DB_NAME**, **DB_USERNAME** and **DB_PASSWORD**
 - Configure the Environment Variables in your IDE and then run the application.
 - Open a browser a type localhost:8080/flights/?hour=hh&minutes=mm&time=a where *hh* is the hour, *mm* minutes, and *a* AM/PM. E.g. /flights/?hour=9&minutes=15&time=PM
-- Use Swagger to accesss all the endpoints : http://localhost:8080/swagger-ui.html#/
+- Use Swagger to access all the endpoints : http://localhost:8080/swagger-ui.html#/
 - You should see some flights 5 hours before & after the time you wrote.
 - At the root of the project a file named fitFlightApplication.log will be created which serves as the log for the application.
 
